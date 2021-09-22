@@ -2,7 +2,7 @@ import React from "react";
 import { IntlProvider } from "react-intl";
 import { ConfigProvider } from "antd";
 import zhCN from "antd/lib/locale/zh_CN";
-// import Header from './Header';
+import Header from './Header';
 import SiteContext from "./SiteContext";
 import cnLocale from "../../zh-CN";
 // import * as utils from '../utils';
@@ -10,6 +10,7 @@ import cnLocale from "../../zh-CN";
 if (typeof window !== 'undefined') {
     // eslint-disable-next-line global-require
     require('../../static/style')
+    require('antd/dist/antd.css')
 }
 
 export default class Layout extends React.Component {
@@ -58,7 +59,7 @@ export default class Layout extends React.Component {
               locale={appLocale.locale === "zh-CN" ? zhCN : null}
               direction={direction}
             >
-              {/* <Header {...restProps} changeDirection={this.changeDirection} /> */}
+              <Header {...restProps} changeDirection={this.changeDirection} />
               {children}
             </ConfigProvider>
           </IntlProvider>
