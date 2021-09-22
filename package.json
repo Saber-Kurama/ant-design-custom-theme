@@ -6,7 +6,9 @@
   "homepage": "",
   "main": "index.js",
   "author": "guochao@digitforce.com",
-  "keywords": ["antd-theme"],
+  "keywords": [
+    "antd-theme"
+  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development bisheng start -c ./site/bisheng.config.js",
     "build": ""
@@ -15,13 +17,19 @@
   "dependencies": {
     "antd": "^4.16.13",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-intl": "^5.20.10"
   },
   "devDependencies": {
+    "@ant-design/bisheng-plugin": "^2.3.1",
     "bisheng": "^3.1.0-beta.4",
     "bisheng-plugin-description": "^0.1.4",
+    "bisheng-plugin-react": "^1.1.2",
+    "bisheng-plugin-toc": "^0.4.4",
     "cross-env": "^7.0.3",
+    "docsearch.js": "^2.6.3",
     "react-document-title": "^2.0.3",
+    "react-github-button": "^0.1.11",
     "react-helmet": "^6.1.0",
     "react-helmet-async": "^1.1.2"
   }
